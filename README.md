@@ -8,7 +8,7 @@ The implementation minimizes the Mean Squared Error (MSE) loss function and achi
 
 ## Dataset
 
-##### California Housing Dataset
+#### California Housing Dataset
 
 
 + Source: Original dataset from Kaggle/Scikit-learn
@@ -26,25 +26,25 @@ The implementation minimizes the Mean Squared Error (MSE) loss function and achi
 ## PSO Configuration
 
 ```
-| Parameter               | Value     | Description                                  |
-|-------------------------|-----------|----------------------------------------------|
-| **Swarm size**          | 30        | Number of particles in the swarm             |
-| **Dimensions**          | 9         | 8 feature weights + 1 bias term              |
-| **Max iterations**      | 100       | Termination criterion                        |
-| **Inertia weight (w)**  | 0.7       | Balances exploration vs. exploitation        |
-| **Cognitive (c₁)**      | 1.5       | Personal best influence (self-confidence)    |
-| **Social (c₂)**         | 1.5       | Global best influence (swarm intelligence)   |
-| **Position bounds**     | [-1e6, 1e6]| Clipped to prevent numerical instability    |
-| **Position init.**      | U[-1, 1]  | Uniform random initialization                |
-| **Velocity init.**      | U[-0.1, 0.1]| Small random velocities                    |
-| **Random seed**         | 42        | Ensures reproducible results                 |
-| **Objective**           | Minimize MSE | Mean Squared Error loss function         |
+| Parameter           | Value        | Description                                |
+|---------------------|-----------   |--------------------------------------------|
+| Swarm size          | 30           | Number of particles in the swarm           |
+| Dimensions          | 9            | 8 feature weights + 1 bias term            |
+| Max iterations      | 100          | Termination criterion                      |
+| Inertia weight      | 0.7          | Balances exploration vs. exploitation      |
+| Cognitive           | 1.5          | Personal best influence (self-confidence)  |
+| Social              | 1.5          | Global best influence (swarm intelligence) |
+| Position bounds     | [-1e6, 1e6]  | Clipped to prevent numerical instability   |
+| Position init.      | U[-1, 1]     | Uniform random initialization              |
+| Velocity init.      | U[-0.1, 0.1] | Small random velocities                    |
+| Random seed         | 42           | Ensures reproducible results               |
+| Objective           | Minimize MSE | Mean Squared Error loss function           |
 ```
 
 ## Project Structure
 
 ```
-pso-linear-regression/
+PSO/
 ├── code.ipynb          # Main implementation (Jupyter notebook)
 ├── dataset/
 │   └── housing.csv     # California Housing dataset
